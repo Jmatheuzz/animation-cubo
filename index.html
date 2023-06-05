@@ -20,6 +20,8 @@
 			}
             img{
                  transform: rotateX(180deg);
+				 width: 300px;
+				 height: 300px;
             }
 		</style>
 		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>	
@@ -55,8 +57,8 @@
 				div.style.height = height;
 
                 const img = document.createElement( 'img' );
-				img.style.width = '360';
-				img.style.height = '360px';
+				img.style.width = '300px';
+				img.style.height = '300px';
 				img.style.border = '0px';
 				img.src = url
 				div.appendChild( img );
@@ -87,12 +89,12 @@
 				container.appendChild( renderer.domElement );
 
 				const group = new THREE.Group();
-				group.add( new Element('360px', '360px', 'imgs/foto1.jpg', 0, 0, 180, Math.PI ) ); // PRETO
-				group.add( new Element('360px', '360px',  'imgs/foto2.jpg', 180, 0, 0, Math.PI / 2 ) ); // AMARELO
-				group.add( new Element('360px', '360px',  'imgs/foto3.jpg', 0, 0, - 180, Math.PI ) ); //AZUL
-				group.add( new Element('360px', '360px',  'imgs/foto4.jpg', - 180, 0, 0, Math.PI / 2 ) ); // VERDE
-				group.add( new Element('360px', '360px',  'imgs/foto5.webp', 0, -180, 0, Math.PI, Math.PI/2 ) ); // VERDE
-				group.add( new Element('-360px', '360px',  'imgs/foto6.webp', 0, 180, 0, Math.PI, Math.PI/2 ) ); // VERDE
+				group.add( new Element('300px', '300px', 'imgs/foto1.jpg', 0, 0, 150, Math.PI ) ); // PRETO
+				group.add( new Element('300px', '300px',  'imgs/foto2.jpg', 150, 0, 0, Math.PI / 2 ) ); // AMARELO
+				group.add( new Element('300px', '300px',  'imgs/foto3.jpg', 0, 0, - 150, Math.PI ) ); //AZUL
+				group.add( new Element('300px', '300px',  'imgs/foto4.jpg', - 150, 0, 0, Math.PI / 2 ) ); // VERDE
+				group.add( new Element('300px', '300px',  'imgs/foto5.webp', 0, -150, 0, Math.PI, Math.PI/2 ) ); // VERDE
+				group.add( new Element('-300px', '300px',  'imgs/foto6.webp', 0, 150, 0, Math.PI, Math.PI/2 ) ); // VERDE
 				scene.add( group );
 
 				controls = new TrackballControls( camera, renderer.domElement );
